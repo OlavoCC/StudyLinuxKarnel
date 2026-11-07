@@ -1,0 +1,227 @@
+# KERNEL LINUX - ARQUIVOS DE COMPILAÇÃO
+# ============================================
+
+# Objetos e arquivos intermediários
+*.o
+*.ko
+*.obj
+*.elf
+*.bin
+*.img
+*.iso
+
+# Módulos e dependências
+*.mod
+*.mod.c
+*.mod.o
+*.order
+*.symvers
+*.marker
+*.unsigned
+*.d
+
+# Arquivos de configuração do kernel
+.config
+.config.old
+.config.orig
+autoconf.h
+auto.conf
+auto.conf.cmd
+autoksyms.h
+compile.h
+utsrelease.h
+version.h
+
+# Arquivos de build
+*.cmd
+.tmp_versions/
+.tmp_vmlinux*
+Module.symvers
+modules.order
+modules.builtin
+modules.builtin.modinfo
+vmlinux
+vmlinux.o
+System.map
+Module.markers
+
+# Pasta de build do kernel (se compilar dentro do repo)
+/arch/*/boot/
+/arch/*/include/generated/
+/include/generated/
+/include/config/
+/scripts/kconfig/zconf.tab.c
+/scripts/kconfig/zconf.lex.c
+/scripts/kconfig/zconf.hash.c
+/scripts/kconfig/conf
+/scripts/kconfig/mconf
+/scripts/kconfig/nconf
+/scripts/kconfig/qconf
+/scripts/kconfig/gconf
+
+# Kbuild
+Kbuild.include
+lib/lib.a
+usr/initramfs_data.cpio
+
+# ============================================
+# QEMU E VMS DE TESTE
+# ============================================
+
+# Imagens de disco
+*.qcow2
+*.qcow2c
+*.vdi
+*.vmdk
+*.vhd
+*.raw
+*.img
+
+# ISOs baixadas
+*.iso
+
+# Snapshots e logs do QEMU
+*.snapshot
+qemu-*.log
+*.pid
+
+# Pasta de compartilhamento com VM (se usar 9p)
+shared/
+vm-share/
+
+# ============================================
+# EDITORES E IDES
+# ============================================
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# Vim/Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+Session.vim
+
+# Emacs
+\#*\#
+.\#*
+
+# JetBrains (CLion, etc)
+.idea/
+*.iml
+*.ipr
+*.iws
+cmake-build-*/
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# Tags (ctags, cscope, etc)
+tags
+TAGS
+cscope.*
+ncscope.*
+GPATH
+GRTAGS
+GTAGS
+
+# ============================================
+# SISTEMA OPERACIONAL
+# ============================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.Trash-*
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ============================================
+# LINGUAGENS E FERRAMENTAS
+# ============================================
+
+# Python (se usar scripts de automação)
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+
+# C/C++
+*.gch
+*.pch
+*.slo
+*.lo
+
+# Rust (se usar ferramentas em Rust)
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# ============================================
+# DOCUMENTAÇÃO GERADA
+# ============================================
+
+# Documentação do kernel (se gerar)
+Documentation/output/
+*.pdf
+*.html
+
+# Doxygen
+/html/
+/latex/
+
+# ============================================
+# BACKUPS E TEMPORÁRIOS
+# ============================================
+
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+*.temp
+*.save
+*.swp
+*.swo
+*~
+
+# Arquivos de patch/diff (mas mantém .patch intencional)
+*.rej
+*.orig
+
+# Logs
+*.log
+
+# ============================================
+# SEGURANÇA - NUNCA SUBIR
+# ============================================
+
+# Chaves e certificados
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+
+# Arquivos de configuração com senhas
+.env
+.env.local
+*.secret
+secrets/
